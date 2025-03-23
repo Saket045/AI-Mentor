@@ -76,10 +76,10 @@ model IndustryInsight {
   
   salaryRanges  Json[]    
   growthRate    Float     
-  demandLevel   DemandLevel  
+  demandLevel   String[] 
   topSkills     String[]  
   
-  marketOutlook MarketOutlook   
+  marketOutlook String[]   
   keyTrends     String[]  
   
   recommendedSkills String[]  
