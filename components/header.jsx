@@ -26,13 +26,7 @@ export default async function Header() {
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
       <nav className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/">
-          <Image
-            src={"/logo.png"}
-            alt="Sensai Logo"
-            width={200}
-            height={60}
-            className="h-12 py-1 w-auto object-contain"
-          />
+         <h1 className="text-2xl font-bold text-blue-500">MENTOR<span className="text-white">AI</span></h1>
         </Link>
 
         {/* Action Buttons */}
@@ -67,15 +61,7 @@ export default async function Header() {
                     Build Resume
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link
-                    href="/ai-cover-letter"
-                    className="flex items-center gap-2"
-                  >
-                    <PenBox className="h-4 w-4" />
-                    Cover Letter
-                  </Link>
-                </DropdownMenuItem>
+               
                 <DropdownMenuItem asChild>
                   <Link href="/interview" className="flex items-center gap-2">
                     <GraduationCap className="h-4 w-4" />

@@ -40,17 +40,14 @@ const HeroSection = () => {
             AI-powered tools for job success.
           </p>
         </div>
+        
         <div className="flex justify-center ">
-          <Link href="/dashboard">
+          <Link href="/https://inspirationapp.org/">
             <Button size="lg" className="px-8">
               Get Started
             </Button>
           </Link>
-          {/* <Link href="/">
-            <Button size="lg" variant="outline" className="px-8">
-              Watch Demo
-            </Button>
-          </Link> */}
+         
         </div>
         <div className="hero-image-wrapper mt-5 md:mt-0">
           <div ref={imageRef} className="hero-image">
