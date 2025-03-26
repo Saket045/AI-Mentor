@@ -72,7 +72,7 @@ export async function getUserOnboardingStatus() {
     if (!user) throw new Error("User not found");
   
     try {
-      const user = await db.user.findUnique({
+      const user = await db.user.findMany({
         where: {
           clerkUserId: userId,
         },
