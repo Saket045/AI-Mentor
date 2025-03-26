@@ -76,10 +76,10 @@ model IndustryInsight {
   
   salaryRanges  Json[]    
   growthRate    Float     
-  demandLevel   String[] 
+  demandLevel   String 
   topSkills     String[]  
   
-  marketOutlook String[]   
+  marketOutlook String   
   keyTrends     String[]  
   
   recommendedSkills String[]  
@@ -88,16 +88,4 @@ model IndustryInsight {
   nextUpdate    DateTime  
 
   @@index([industry])
-}
-
-enum DemandLevel {
-  High
-  Medium
-  Low
-}
-
-enum MarketOutlook {
-  Positive
-  Neutral
-  Negative
 }
